@@ -1,7 +1,7 @@
 # Letterboxd Layout Clone
 A simple Letterboxd layout clone <br>
 Built with HTML and CSS <br>
-You can find the same layout built only with HTML and CSS in [here] (https://github.com/viQcinese/letterboxd_layout)
+You can find the same layout built only with HTML and CSS in [here](https://github.com/viQcinese/letterboxd_layout)
 
 # Visual 
 <img src="https://github.com/viQcinese/documentation/blob/master/letterboxd_layout/letterboxd_layout.gif?raw=true" width="100%" height="100%"/>
