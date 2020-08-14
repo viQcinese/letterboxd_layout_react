@@ -6,6 +6,10 @@ You can find the same layout built only with HTML and CSS in [here] (https://git
 # Visual 
 <img src="https://github.com/viQcinese/documentation/blob/master/letterboxd_layout/letterboxd_layout.gif?raw=true" width="100%" height="100%"/>
 
+# Technologies
+<img align="left" alt="NodeJS" height="20px" src="https://raw.githubusercontent.com/viQcinese/viQcinese/master/src/node-dot-js.svg" />NodeJS <br>
+<img align="left" alt="ReactJS" height="20px" src="https://raw.githubusercontent.com/viQcinese/viQcinese/master/src/react.svg" />ReactJS
+
 # Requirements
 - NodeJS with Yarn or NPM
 
