@@ -30,5 +30,6 @@ react install
 npm start
 react start
 ```
-
+# Contributions
+Contributions are always welcome! If you take an interest in the code, feel free to make pull requests or get in touch with me on github 😊
 
