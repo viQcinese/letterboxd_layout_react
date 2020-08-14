@@ -1,0 +1,11 @@
+.recent-showdowns-container {
+  margin-bottom: 60px;
+}
+
+.showdowns {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  width: 100%;
+}

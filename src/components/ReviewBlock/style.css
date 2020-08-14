@@ -1,0 +1,64 @@
+.review-block-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-block-container .review-body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  margin: 25px 0;
+}
+
+.review-block-container .review-body p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.review-block-container .review-body p strong {
+  font-weight: normal;
+  color: #fff;
+}
+
+.review-block-container .review-body p strong:hover {
+  color: var(--color-logo-blue); 
+  cursor: pointer;
+}
+
+.review-block-container footer {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-main-footer);
+  padding-bottom: 25px;
+}
+
+.review-block-container footer .like {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.review-block-container footer .like img {
+  height: 20px;
+}
+
+.review-block-container footer .like strong {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--color-text-dark);
+  margin: 0 5px;
+}
+
+.review-block-container footer strong:hover {
+  color: var(--color-text-lighter)
+}
+
+.review-block-container footer span {
+  font-size: 13px;
+  margin-left: 5px;
+  color: var(--color-text-dark);
+  cursor: pointer;
+}
+
+.review-block-container footer span:hover {
+  color: var(--color-text-lighter)
+}

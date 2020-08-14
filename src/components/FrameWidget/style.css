@@ -1,0 +1,35 @@
+.frame-widget-container {
+  width: 305px;
+  position: relative;
+}
+
+.frame-widget-container img {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgb(121,138,155, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.frame-widget-container img:hover {
+  border: 1px solid rgb(121,138,155, 0.4);
+}
+
+.frame-widget-container h3 {
+  font-size: 18px;
+  color: var(--color-title);
+  display: inline;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.frame-widget-container h3:hover {
+  color: var(--color-logo-blue)
+}
+
+.frame-widget-container p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 20px;
+}

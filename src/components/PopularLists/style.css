@@ -1,0 +1,9 @@
+.popular-lists-container {
+  margin-bottom: 60px;
+}
+
+.popular-lists-container .lists {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,40 @@
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container .container {
+  margin: 30px 0;
+  display: flex;
+}
+
+.welcome-container .container span {
+  font-size: 24px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.welcome-container .container span em {
+  color: rgb(255,255, 255);
+  position: relative;
+  cursor: pointer;
+  font-style: normal;
+}
+
+.welcome-container .container span em::after {
+  content: '';
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: var(--color-card-border);
+  position: absolute;
+  transition: 0.2s;
+}
+
+.welcome-container .container span em:hover::after {
+  background: rgb(255,255, 255);
+}

@@ -1,0 +1,124 @@
+.review-block-header-container header {
+  display: flex;
+  align-items: center;
+}
+
+.review-block-header-container header .poster {
+  width: 80px;
+  height: 120px;
+  position: relative;
+}
+
+.review-block-header-container header .poster::after {
+  content: '';
+  border: 2px solid none;
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.review-block-header-container header .poster:hover::after {
+  content: '';
+  border: 2px solid var(--color-logo-green);
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.review-block-header-container header .poster img {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--color-card-border)
+}
+
+.review-block-header-container header .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.review-block-header-container header .info .author {
+  display: flex;
+  align-items: center;
+}
+
+.review-block-header-container header .info .author img {
+  height: 24px;
+  width: 24px;
+  border: 1px solid var(--color-card-border);
+  border-radius: 50%;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.review-block-header-container header .info .author span {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  display: inline;
+  cursor: pointer;
+}
+
+.review-block-header-container header .info span {
+  margin-top: 10px;
+}
+
+.review-block-header-container header .info strong {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: var(--color-title);
+  margin: 10px 0;
+  transition: 0.1s;
+  display: inline;
+}
+
+.review-block-header-container header .info strong:hover {
+  color: var(--color-logo-blue);
+  cursor: pointer;
+}
+
+.review-block-header-container header .info em {
+  color: var(--color-text-primary);
+  font-weight: normal;
+  margin-left: 5px;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.review-block-header-container header .movie {
+  display: flex;
+  align-items: center;
+}
+
+.review-block-header-container header .movie .ratings {
+  margin-right: 10px;
+}
+
+.review-block-header-container header .movie .ratings img {
+  height: 14px;
+  margin: 0;
+}
+
+.review-block-header-container header .movie .comments img {
+  height: 16px;
+  margin-right: 3px;
+  position: relative;
+  top: 2px;
+}
+
+.review-block-header-container header .movie .comments span {
+  font-size: 14px;
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+
+.review-block-header-container header .movie .comments span:hover {
+  color: var(--color-logo-blue);
+}

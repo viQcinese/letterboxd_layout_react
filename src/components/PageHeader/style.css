@@ -1,0 +1,119 @@
+header.page-header {
+  height: 72px;
+  background: rgb(20,24,28);
+}
+
+header.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.page-header .container  img {
+  height: 60px;
+}
+
+header.page-header .container .actions {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+header.page-header .container .actions .user {
+  display: flex;
+  align-items: center;
+}
+
+header.page-header .container .actions .user img:first-child {
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+header.page-header .container .actions .user span {
+  cursor: pointer;
+}
+
+header.page-header .container .actions .user span:hover {
+  color: var(--color-text-lightest);
+}
+
+header.page-header .container .actions .user img:last-child {
+  height: 16px;
+}
+
+header.page-header .container .actions > a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+header.page-header .container .actions > a:hover {
+  color: var(--color-text-lightest)
+}
+
+header.page-header .container .actions span img {
+  height: 16px;
+  margin-left: 20px;
+}
+
+header.page-header .container .actions .buttons-container {
+  margin-left: 20px;
+  display: flex;
+}
+
+header.page-header .container .actions .buttons-container button {
+  height: 24px;
+  border: none;
+  outline: none;
+  color: var(--color-button-text);
+
+  font-size: 18px;
+  font-weight: normal;
+}
+
+header.page-header .container .actions .buttons-container button:first-child {
+  background-color: var(--color-button-green);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header.page-header .container .actions .buttons-container button:first-child:hover {
+  background-color: var(--color-button-green-dark);
+  cursor: pointer;  
+}
+
+header.page-header .container .actions .buttons-container button:first-child strong {
+  font-size: 18px;
+  margin-right: 3px;
+  color: white;
+}
+
+header.page-header .container .actions .buttons-container button:last-child {
+  background-color: var(--color-button-green-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+header.page-header .container .actions .buttons-container button:last-child:hover {
+  background-color: var(--color-button-green);
+  cursor: pointer;  
+}
+
+header.page-header .container .actions .buttons-container button img {
+  height: 18px;
+  padding: 0 3px;
+}

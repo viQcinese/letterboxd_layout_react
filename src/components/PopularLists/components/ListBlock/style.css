@@ -1,0 +1,124 @@
+.list-block.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-block-container .movie-cards {
+  width: 242px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.list-block-container .movie-cards::after {
+  content: '';
+  border: 2px solid none;
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.2s;
+}
+
+.list-block-container .movie-cards:hover::after {
+  content: '';
+  border: 2px solid rgb(0,224,84);
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.list-block-container .movie-cards .movie {
+  height: 110px;
+  border: 1px solid var(--color-card-border);
+  border-radius: 5px;
+  margin-left: -32px;
+  position: relative;
+}
+
+.list-block-container .movie-cards .movie:last-child {
+  margin-left: 0;
+}
+
+.list-block-container .movie-cards .movie img {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.list-block-container h3 {
+  display: inline;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.list-block-container h3:hover {
+  color: var(--color-text-light)
+}
+
+.list-block-container .info {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.list-block-container .info .author {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list-block-container .info .author span {
+  cursor: pointer;
+}
+
+.list-block-container .info .author span:hover {
+  color: var(--color-text-light)
+}
+
+.list-block-container .info .author img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.list-block-container .info .likes {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.list-block-container .info .likes img {
+  height: 16px;
+  margin-right: 5px;
+}
+
+.list-block-container .info .likes span:hover{
+  color: var(--color-text-lightest)
+}
+
+.list-block-container .info .comments {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list-block-container .info .comments span:hover {
+  color: var(--color-text-lightest)
+}
+
+.list-block-container .info .comments img {
+  height: 16px;
+  margin-right: 5px;
+}
