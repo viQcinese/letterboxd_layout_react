@@ -15,7 +15,7 @@ const NewFromFriends = (props) => {
         icon={zap} alt="bolt" 
         subtitle="all activity"
       />
-      <div class="movie-cards-wrapper">
+      <div className="movie-cards-wrapper">
         <MovieCard />
         <MovieCard />
         <MovieCard />

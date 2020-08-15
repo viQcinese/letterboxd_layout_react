@@ -22,29 +22,6 @@ header.page-header .container .actions {
   font-weight: bold;
 }
 
-header.page-header .container .actions .user {
-  display: flex;
-  align-items: center;
-}
-
-header.page-header .container .actions .user img:first-child {
-  height: 24px;
-  border-radius: 50%;
-  margin-right: 8px;
-}
-
-header.page-header .container .actions .user span {
-  cursor: pointer;
-}
-
-header.page-header .container .actions .user span:hover {
-  color: var(--color-text-lightest);
-}
-
-header.page-header .container .actions .user img:last-child {
-  height: 16px;
-}
-
 header.page-header .container .actions > a {
   margin-left: 20px;
   text-decoration: none;

@@ -1,0 +1,162 @@
+.log-button-container {
+  margin-left: 20px;
+  display: flex;
+  position: relative;
+}
+
+.log-button-container > button {
+  height: 24px;
+  border: none;
+  outline: none;
+  color: var(--color-button-text);
+
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.log-button-container > button:first-child {
+  background-color: var(--color-button-green);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.log-button-container > button:first-child:hover {
+  background-color: var(--color-button-green-dark);
+  cursor: pointer;  
+}
+
+.log-button-container > button:first-child strong {
+  font-size: 18px;
+  margin-right: 3px;
+  color: white;
+}
+
+.log-button-container > button:nth-child(2) {
+  background-color: var(--color-button-green-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.log-button-container > button:nth-child(2):hover {
+  background-color: var(--color-button-green);
+  cursor: pointer;  
+}
+
+.log-button-container > button img {
+  width: 24px;
+  padding: 0 3px;
+}
+
+.log-button-container .chevronMenu {
+  width: 160px;
+  position: absolute;
+  background: #8899aa;
+  border-radius: 3px;
+  top: 28px;
+  right: 0;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px #000;
+  border-top: 1px solid var(--color-text-light);
+  border-bottom: 1px solid var(--color-text-light);
+  padding: 2px 0;
+  display: none;
+  /* display: flex; */
+}
+
+.log-button-container .chevronMenu a {
+  padding: 5px 10px 5px 15px;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0;
+  color: var(--color-text-darkest);
+  cursor: pointer;
+}
+
+.log-button-container .chevronMenu a:hover {
+  background: var(--color-text-dark);
+  color: var(--color-title)
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: flex; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: default; /* Add a pointer on hover */
+}
+
+#log-prompt {
+  background: var(--color-card-footer);
+  padding: 15px 40px 30px;
+  border-radius: 3px;
+  width: 65%;
+  margin: auto;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+}
+
+#log-prompt legend {
+  font-size: 15px;
+  font-weight: normal;
+  color: #99AABB;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#log-prompt legend button {
+  font-stretch: ultra-expanded;
+  border: none;
+  background: none;
+  font-size: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+#log-prompt legend button:hover {
+  color: white;
+}
+
+#log-prompt label {
+  font-size: 13px;
+  font-weight: normal;
+  
+  color: var(--color-text-lightest);
+}
+
+#log-prompt input {
+  background: #ccddee;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  padding: 12px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: var(--color-text-darker);
+  border: none;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+#log-prompt input:focus {
+  background: #fff;
+}
+

@@ -13,7 +13,7 @@ const PopularWithFriends = () => {
         title="popular with friends" 
         subtitle="more"
       />
-      <div class="movie-cards-wrapper">
+      <div className="movie-cards-wrapper">
         <MovieCard />
         <MovieCard />
         <MovieCard />
