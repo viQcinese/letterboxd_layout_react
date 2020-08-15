@@ -22,13 +22,13 @@ git clone https://github.com/viQcinese/letterboxd_layout_react.git
 #### Install the required packages with npm
 ```
 npm install
-react install
+yarn install
 ```
 
 #### Run the local server
 ```
 npm start
-react start
+yarn start
 ```
 # Contributions
 Contributions are always welcome! If you take an interest in the code, feel free to make pull requests or get in touch with me on github 😊
