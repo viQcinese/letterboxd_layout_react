@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import avatar from '../../../../assets/images/avatar.jpg'
 import chevronDownIcon from '../../../../assets/images/icons/chevron-down.svg'
@@ -7,15 +7,23 @@ import './style.css'
 
 function UserMenu() {
 
+  const [isMouseOnUserMenu, setMouseOnUserMenu] = useState(false);
+
+
   function handleMouseEnter(e) {
     document.querySelector('.user-menu').style.display = "flex"
+    setMouseOnUserMenu(true)
+    console.log(isMouseOnUserMenu)
   }
 
   function handleMouseLeave(e) {
-    
-    const e2 = new CustomEvent('mouseOver')
-    console.log(e2)
-     
+    setMouseOnUserMenu(false)
+    console.log(isMouseOnUserMenu)
+    setTimeout( () => {
+      if (isMouseOnUserMenu){
+        document.querySelector('.user-menu').style.display = "none"
+      }
+    }, 1000)
   }
 
   return (
