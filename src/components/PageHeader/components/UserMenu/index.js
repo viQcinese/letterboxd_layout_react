@@ -7,22 +7,16 @@ import './style.css'
 
 function UserMenu() {
 
-  const [isMouseOnUserMenu, setMouseOnUserMenu] = useState(false);
-
+  let closeMenu;
 
   function handleMouseEnter(e) {
+    clearTimeout(closeMenu)
     document.querySelector('.user-menu').style.display = "flex"
-    setMouseOnUserMenu(true)
-    console.log(isMouseOnUserMenu)
   }
 
   function handleMouseLeave(e) {
-    setMouseOnUserMenu(false)
-    console.log(isMouseOnUserMenu)
-    setTimeout( () => {
-      if (isMouseOnUserMenu){
-        document.querySelector('.user-menu').style.display = "none"
-      }
+    closeMenu = setTimeout(() => {
+      document.querySelector('.user-menu').style.display = "none"
     }, 1000)
   }
 

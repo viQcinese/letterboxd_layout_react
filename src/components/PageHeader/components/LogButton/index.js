@@ -7,37 +7,65 @@ import './style.css'
 function LogButton() {
 
   // STATE
-  const [chevronMenuDisplay, setChevronMenuDisplay] = useState("none");
-  const [logButtonDisplay, setLogButtonDisplay] = useState(false);
+  const [isChevronMenuOpen, setChevronMenuOpen] = useState(false);
+  const [isLogContainerOpen, setLogContainerOpen] = useState(false);
 
-  // HANDLE FUNCTIONS
+  let closeChevronMenu;
+
+  // CHEVRON MENU FUNCTIONS
   function handleChevronButton(e) {
-    if (chevronMenuDisplay === "flex") setChevronMenuDisplay("none")
-    if (chevronMenuDisplay === "none") setChevronMenuDisplay("flex")
+    if (isChevronMenuOpen) {
+      document.querySelector('.chevronMenu').style.display = "none"
+      setChevronMenuOpen(false)
+    }
+      
+    if (!isChevronMenuOpen) {
+      document.querySelector('.chevronMenu').style.display = "flex"
+      setChevronMenuOpen(true)
+    }
   }
 
+  function handleMouseEnterButtonContainer(e) {
+    console.log("enter")
+    clearTimeout(closeChevronMenu)
+  }
+
+  function handleMouseLeaveButtonContainer(e) {
+    console.log("exit")
+    closeChevronMenu = setTimeout(() => {
+      document.querySelector('.chevronMenu').style.display = "none"
+    }, 1000)
+  }
+
+  // LOG CONTAINER
   function handleLogButton(e) {
     e.preventDefault();
-    if (logButtonDisplay) {
+    if (isLogContainerOpen) {
       document.querySelector('#overlay').style.display = "none"
-      setLogButtonDisplay(false)
+      // document.querySelector("body").style.overflow = "visible"
+      setLogContainerOpen(false)
     } else {
       document.querySelector('#overlay').style.display = "flex"
-      document.querySelector("body").style.overflow = "hidden"
-      setLogButtonDisplay(true)
+      // document.querySelector("body").style.overflow = "hidden"
+      document.querySelector('#log-prompt input').focus()
+      setLogContainerOpen(true)
     }
   }
 
   // SFX RENDER
   return (
-    <div className="log-button-container">
+    <div 
+    className="log-button-container"
+    onMouseEnter={handleMouseEnterButtonContainer}
+    onMouseLeave={handleMouseLeaveButtonContainer}
+    >
       <button onClick={handleLogButton}>
         <strong>+</strong> LOG
       </button>
       <button onClick={handleChevronButton}>
         <img src={chevronDownWhiteIcon} alt="chevron down"/>     
       </button>
-      <div className="chevronMenu" style={{"display": chevronMenuDisplay}}>
+      <div className="chevronMenu">
         <a>Start a new list...</a>
         <a>Find your friends</a>
       </div>
